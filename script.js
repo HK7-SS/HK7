@@ -44,28 +44,23 @@ window.onload = () => {
 
     const carta = document.querySelector(".carta");
 
-
     carta.style.opacity = "0";
-
-    carta.style.transform =
-    "translateY(40px)";
-
+    carta.style.transform = "translateY(40px)";
 
     setTimeout(()=>{
 
-        carta.style.transition =
-        "1s";
-
-
+        carta.style.transition = "1s";
         carta.style.opacity="1";
-
-        carta.style.transform =
-        "translateY(0)";
-
+        carta.style.transform = "translateY(0)";
 
     },300);
 
 };
+
+
 function abrirSite() {
     document.getElementById("tela-abertura").classList.add("fechar");
-    }
+
+    let musica = document.getElementById("musica");
+    musica.play();
+}
