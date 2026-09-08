@@ -66,3 +66,6 @@ window.onload = () => {
     },300);
 
 };
+function abrirSite() {
+    document.getElementById("tela-abertura").classList.add("fechar");
+    }
